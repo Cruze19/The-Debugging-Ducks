@@ -1,3 +1,136 @@
+/* Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Navigation Bar Styles */
+  nav {
+    background-color: #0099cc;  /* Sets the background color of the navigation bar*/
+    color: white;
+    display: flex;
+    justify-content: space-between;  /* Aligns the logo and menu items to the left and right edges of the navigation bar */
+    align-items: center;             /* Vertically centers the logo and menu items */
+    padding: 20px 40px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    font-size: 35px;  /* Logo font size */
+    font-weight: bold;  
+  }
+  
+  /* Menu Styles */
+  ul {
+    display: flex;
+    list-style: none; /*Removes the bullet points from the list */ 
+    padding: 0;      
+    margin: 0;        
+  }
+  
+  /* Menu Items Styles*/ 
+  ul li {
+    margin-right: 20px;
+  }
+  
+  /* Menu Item Links Styles*/
+  ul li a {
+    color: white;
+    font-size: 17px;;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  /* Hover styles for menu item links */
+  ul li a:hover {
+    color:  #1affff;
+    }
+  
+  /* Hamburger menu styles */
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    padding: 5px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+
+  /* Hamburger menu hover styles */
+  .checkbtn:hover {
+    transform: scale(1.1); /* Scales the hamburger menu icon */
+  }
+
+  /* Hamburger menu active styles */
+  .checkbtn:active {
+    transform: scale(0.95); /* Scales the hamburger menu icon when clicked */
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    /* Menu styles for small screens */
+    ul {
+      position: absolute;
+      top: 79px;
+      right: -100%;
+      background: #2c3e50;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 30px;
+      transition: all 0.3s;
+    }
+  
+	/*Menu items styles for small screens*/
+  nav ul li {
+      margin: 20px 0;
+    }
+  
+    /* Menu item links styles for small screens */
+    ul li a {
+      font-size: 20px;
+    }
+  
+    /* Show the menu when the checkbox is ckecked*/
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+
+/*Section Styles*/
+section {
+	background: url(../img/blog.jpg) no-repeat center; /*Set the background image*/
+	background-size: cover;  /*Scale the background image to cover the entire section*/
+	height: 100vh; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+/*Heading Styles*/
 h1 {
-	background:purple;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	position: relative;
+	z-index: 1;
 }
