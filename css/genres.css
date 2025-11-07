@@ -1,0 +1,103 @@
+/* Body Styles */
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #66c2ff;
+}
+
+/* Center Styles */
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Move to center */
+}
+
+/* Menu Styles */
+.menu {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* Title Styles*/
+.title {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+/* Subtitle Styles */
+.subtitle {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* List Styles */
+.list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.list Label {
+    padding: 13px 34px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0.6mm solid white;
+    border-radius: 7mm; /* Make this */
+    margin: 5px;
+    cursor: pointer;
+}
+
+.list input {
+    display: none;
+}
+
+.list input:checked + label {
+    color: rgb(35, 155, 241);
+    border-color:  rgb(14, 239, 255);
+    background: rgb(230, 245, 255);
+}
+
+/* Button Style */
+.btn-heavy {
+    width: 75%;
+    background: #04AA6D;
+    outline: none;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2mm;
+    padding: 14px 0;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.btn-light {
+   background: none;
+   outline: none;
+   border: none;
+   display: block;
+   margin: auto;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 15px;
+   color: rgb(128, 128, 128); 
+}
