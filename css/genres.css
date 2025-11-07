@@ -1,10 +1,10 @@
-/* Body Styles */
+/* This is the style of the body of the page */
 body {
-    width: 100%;
-    height: 100vh;
+    width: 100%; 
+    height: 100vh; 
     margin: 0;
     padding: 0;
-    background: #66c2ff;
+    background: #66c2ff; /* This is the background color of the page */
 }
 
 /* Center Styles */
@@ -39,65 +39,71 @@ body {
     font-size: 14px;
     color: black;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* This create the space between the subtitle and the list */
 }
 
 /* List Styles */
 .list {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 35px;
+    align-items: center; 
+    justify-content: center; /* Move to center */
+    flex-wrap: wrap; 
+    margin-bottom: 35px; /* This create the space between the list and the button */
     color: white;
 }
 
+/* Label Styles */
 .list Label {
     padding: 13px 34px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     font-weight: 600;
-    border: 0.6mm solid white;
-    border-radius: 7mm; /* Make this */
-    margin: 5px;
-    cursor: pointer;
+    border: 0.6mm solid white; /* This is the border */
+    border-radius: 7mm; /* This is for the border corners */
+    margin: 5px; 
+    cursor: pointer; /* This is for the hover effect */
 }
 
+/* Checkbox Styles */
 .list input {
     display: none;
 }
 
+/* Checkbox Checked Styles */
 .list input:checked + label {
-    color: rgb(35, 155, 241);
-    border-color:  rgb(14, 239, 255);
-    background: rgb(230, 245, 255);
+    color: rgb(35, 155, 241);         /* This is the text color */    
+    border-color:  rgb(14, 239, 255); /* This is the border color */
+    background: rgb(230, 245, 255);   /* This is the background color */
 }
 
 /* Button Style */
 .btn-heavy {
     width: 75%;
-    background: #04AA6D;
+    background: #04AA6D; /* Green color */
     outline: none;
-    border: none;
+    border: none;         /* Remove the button border */
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: white; 
     font-size: 15px;
     font-weight: 600;
-    border-radius: 2mm;
-    padding: 14px 0;
-    display: block;
+    border-radius: 2mm;  /* This is for the button corners */
+    padding: 14px 0;     /* This is for the button height */
+    display: block;     /* This is for the button width */
     margin: auto;
     margin-bottom: 20px;
 }
 
+/* Skip Button Styles */
 .btn-light {
-   background: none;
-   outline: none;
-   border: none;
-   display: block;
+   background: none;    /* Transparent background */
+   outline: none;       /* Remove the button outline */
+   border: none;        /* Remove the button border */
+   display: block;      /* Center the button */
    margin: auto;
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: 15px;
-   color: rgb(128, 128, 128); 
+   color: rgb(128, 128, 128); /* Gray color */
 }
+
+
