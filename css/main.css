@@ -1,0 +1,137 @@
+/* This is the style of the body of the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Navigation Bar Styles */
+nav {
+    width: 100%;
+    background-color: #0099cc;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 120px;
+}
+
+/* Logo Styles */
+h1 {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    float: left;
+    font-weight: bold;
+}
+
+/* Menu Styles */
+nav ul {
+    float: right;
+}
+
+/* Menu Items Styles*/ 
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+/* Menu Item Links Styles*/
+nav ul li a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 17px;
+    padding: 0px 16px;
+    display: block;
+}
+
+/* Menu Item Links Hover Styles*/
+nav ul li a:hover {
+    background-color: #10c9e1;
+}
+
+/* Submenu Styles */
+nav ul li ul {
+    position: absolute;
+    display: none;
+    background: #0099cc;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* Submenu Display Styles */
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Submenu Item Styles */
+nav ul li ul li {
+    line-height: 1;
+    width: 190px;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+/* Submenu Item Link Styles */
+nav ul li ul li a {
+    padding: 10px 16px;
+}
+
+/* Submenu Item Link Hover Styles */
+nav  ul li ul li a:hover {
+    background-color: #10c9e1;
+}
+
+/* Create two equal columns that floats next to each other */
+
+/* Left Column Styles */
+.leftcolumn {   
+    float: left;
+    width: 50%;         /* This makes the left column be equal to the right column */
+}
+
+/* Right Column Styles */
+.rightcolumn {
+    float: left;
+    width: 50%;         /* This makes the right column be equal to the left column */
+    padding-left: 20px; /* Space between the left and right column */
+}
+
+/* Fake Image Styles */
+.fakeimg {
+    background-color: #0a67a6;
+  
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    padding: 20px;      /* The space between the card and the text */
+    margin-top: 20px;   /* The space between the card and the card above it */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer Styles */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
