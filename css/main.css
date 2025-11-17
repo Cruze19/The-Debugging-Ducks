@@ -3,135 +3,175 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Body Styles */
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    background: #f2f2f2;
 }
 
 /* Navigation Bar Styles */
 nav {
     width: 100%;
     background-color: #0099cc;
-    height: 75px;
-    line-height: 75px;
-    padding: 0px 120px;
+    color: white;
+    padding: 20px 40px; /* This move the logo and menu to the left and right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Logo Styles */
-h1 {
+nav h1 {
     font-size: 35px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    float: left;
     font-weight: bold;
 }
 
 /* Menu Styles */
 nav ul {
-    float: right;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 /* Menu Items Styles*/ 
 nav ul li {
-    float: left;
-    list-style: none;
     position: relative;
 }
 
 /* Menu Item Links Styles*/
-nav ul li a {
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+nav a {
     color: white;
-    font-size: 17px;
-    padding: 0px 16px;
+    text-decoration: none;
+    padding: 10px;
     display: block;
 }
 
 /* Menu Item Links Hover Styles*/
-nav ul li a:hover {
-    background-color: #10c9e1;
+nav a:hover {
+    color:  #1affff;
+    border-radius: 4px;
 }
 
-/* Submenu Styles */
+/* Dropdown Menu Styles */
 nav ul li ul {
     position: absolute;
     display: none;
     background: #0099cc;
-    border-radius: 0px 0px 5px 5px;
+    min-width: 150px;
+    border-radius: 4px;
 }
 
-/* Submenu Display Styles */
+/* Dropdown Menu Display Styles */
 nav ul li:hover ul {
     display: block;
 }
 
-/* Submenu Item Styles */
+/* Dropdown Menu Item Styles */
 nav ul li ul li {
-    line-height: 1;
-    width: 190px;
-    border-radius: 5px;
-    padding: 6px;
+    width: 100%;
 }
 
-/* Submenu Item Link Styles */
-nav ul li ul li a {
-    padding: 10px 16px;
+/* Dropdown Menu Item Link Hover Styles */
+nav ul li ul li a:hover {
+    background: #294f9a83;
 }
 
-/* Submenu Item Link Hover Styles */
-nav  ul li ul li a:hover {
-    background-color: #10c9e1;
+/* ===== Page Content Styles ===== */
+
+/* Header Styles */
+.header {
+   padding: 20px;
+   margin: 20px;
+   background: #ddd;
+   text-align: center;
+   font-size: 30px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
-/* Create two equal columns that floats next to each other */
+/* Row Styles */
+.row {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
 
 /* Left Column Styles */
 .leftcolumn {   
-    float: left;
-    width: 50%;         /* This makes the left column be equal to the right column */
+    flex: 70%;         /* This makes the left column be equal to the right column */
 }
 
 /* Right Column Styles */
 .rightcolumn {
-    float: left;
-    width: 50%;         /* This makes the right column be equal to the left column */
-    padding-left: 20px; /* Space between the left and right column */
+    flex: 30%;
+   
 }
 
-/* Fake Image Styles */
-.fakeimg {
-    background-color: #0a67a6;
-  
+/* Image Styles */
+.img1, .img2, .img3, .img4, .img5, .img6 {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px; /* This is for the image corners */
+    margin-bottom: 10px;
 }
+
+/* Example image (replace with image here) */
+.img1 { background-image: url(../img/snowboarding.jpg); }
+.img2 { background-image: url(../img/sonic.jpg); }
+.img3 { background-image: url(../img/msmc.jpg); }
+.img4 { background-image: url(../img/hawaii.jpg); }
+.img5 { background-image: url(../img/torta.jpg); }
+.img6 { background-image: url(../img/art_studio.jpg); }
 
 /* Card Styles */
 .card {
     background-color: white;
     padding: 20px;      /* The space between the card and the text */
     margin-top: 20px;   /* The space between the card and the card above it */
+    border-radius: 5px; /* This is for the card corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+/* Card Title */
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Card Subtitle: by author and date */
+.card h5 {
+    color: #524949;
+    margin-bottom: 15px;
+}
+
+/* Card Paragraph */
+.card p {
+    line-height: 1.5;
 }
 
 /* Footer Styles */
 .footer {
-    padding: 20px;
-    text-align: center;
     background: #ddd;
-    margin-top: 20px;
+    text-align: center;
+    padding: 25px;
+    margin-top: 19px;
 }
 
-@media (max-width: 768px) {
-    .leftcolumn, .rightcolumn {
-        width: 100%;
-        padding: 0;
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
