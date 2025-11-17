@@ -121,12 +121,12 @@ nav ul li ul li a:hover {
 }
 
 /* Example image (replace with image here) */
-.img1 { background-image: url(../img/snowboarding.jpg); }
-.img2 { background-image: url(../img/sonic.jpg); }
-.img3 { background-image: url(../img/msmc.jpg); }
-.img4 { background-image: url(../img/hawaii.jpg); }
-.img5 { background-image: url(../img/torta.jpg); }
-.img6 { background-image: url(../img/art_studio.jpg); }
+.img1 { background-image: url(../img/sports/snowboarding.jpg); }
+.img2 { background-image: url(../img/videogames/sonic.jpg); }
+.img3 { background-image: url(../img/sports/msmc.jpg); }
+.img4 { background-image: url(../img/travel/hawaii.jpg); }
+.img5 { background-image: url(../img/food/torta.jpg); }
+.img6 { background-image: url(../img/art/art_studio.jpg); }
 
 /* Card Styles */
 .card {
