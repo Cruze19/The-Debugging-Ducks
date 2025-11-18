@@ -7,16 +7,16 @@
 }
 
 /* Body Styles */
-body {
+body{
     background: #f2f2f2;
 }
 
-/* Navigation Bar Styles */
+/* Navigation bar Styles */
 nav {
     width: 100%;
     background-color: #0099cc;
     color: white;
-    padding: 20px 40px; /* This move the logo and menu to the left and right */
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,13 +85,12 @@ nav ul li ul li a:hover {
 
 /* Header Styles */
 .header {
-   padding: 20px;
-   margin: 20px;
-   background: #ddd;
-   text-align: center;
-   font-size: 30px;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
+    padding: 20px;
+    margin: 20px;
+    background: #0da96b;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 /* Row Styles */
@@ -109,7 +108,6 @@ nav ul li ul li a:hover {
 /* Right Column Styles */
 .rightcolumn {
     flex: 30%;
-   
 }
 
 /* Image Styles */
@@ -122,18 +120,18 @@ nav ul li ul li a:hover {
 }
 
 /* Example image (replace with image here) */
-.img1 { background-image: url(../img/sports/snowboarding.jpg); }
-.img2 { background-image: url(../img/videogames/sonic.jpg); }
-.img3 { background-image: url(../img/sports/msmc.jpg); }
-.img4 { background-image: url(../img/travel/hawaii.jpg); }
-.img5 { background-image: url(../img/food/torta.jpg); }
-.img6 { background-image: url(../img/art/art_studio.jpg); }
+.img1 { background-image: url();}
+.img2 { background-image: url();}
+.img3 { background-image: url();}
+.img4 { background-image: url();}
+.img5 { background-image: url();}
+.img6 { background-image: url();}
 
 /* Card Styles */
 .card {
     background-color: white;
-    padding: 20px;      /* The space between the card and the text */
-    margin-top: 20px;   /* The space between the card and the card above it */
+    padding: 20px;  /* This is for the space between the card and the text */
+    margin-top: 20px;   /* This is for the space between the card and the card above it */
     border-radius: 5px; /* This is for the card corners */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -175,4 +173,5 @@ nav ul li ul li a:hover {
         flex-direction: column;
         align-items: flex-start;
     }
+
 }
