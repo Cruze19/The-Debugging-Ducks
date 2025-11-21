@@ -104,7 +104,7 @@ nav ul li ul li a:hover {
 
 /* Left Column Styles */
 .leftcolumn {   
-    flex: 30%;  /* This makes the left column be equal to the right column */
+    flex: 50%;  /* This makes the left column be equal to the right column */
 }
 
 /* Right Column Styles */
@@ -122,12 +122,12 @@ nav ul li ul li a:hover {
 }
 
 /* Example image (replace with image here) */
-.img1 { background-image: url(../img/sports/);}
-.img2 { background-image: url(../img/sports/);}
-.img3 { background-image: url(../img/sports/);}
-.img4 { background-image: url(../img/sports/);}
-.img5 { background-image: url(../img/sports/);}
-.img6 { background-image: url(../img/sports/);}
+.img1 { background-image: url(../img/sports/futbol.jpg);}
+.img2 { background-image: url(../img/sports/swimming.jpg);}
+.img3 { background-image: url(../img/sports/skating.jpg);}
+.img4 { background-image: url(../img/sports/volleyball.jpg);}
+.img5 { background-image: url(../img/sports/rugby.jpg);}
+.img6 { background-image: url(../img/sports/badminton.jpg);}
 
 /* Card Styles */
 .card {
