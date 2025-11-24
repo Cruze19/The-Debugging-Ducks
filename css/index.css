@@ -112,23 +112,6 @@ nav ul li ul li a:hover {
    
 }
 
-/* Image Styles */
-.img1, .img2, .img3, .img4, .img5, .img6 {
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 6px; /* This is for the image corners */
-    margin-bottom: 10px;
-}
-
-/* Example image (replace with image here) */
-.img1 { background-image: url(../img/sports/snowboarding.jpg); }
-.img2 { background-image: url(../img/videogames/sonic.jpg); }
-.img3 { background-image: url(../img/sports/msmc.jpg); }
-.img4 { background-image: url(../img/travel/hawaii.jpg); }
-.img5 { background-image: url(../img/food/torta.jpg); }
-.img6 { background-image: url(../img/art/art_studio.jpg); }
-
 /* Card Styles */
 .card {
     background-color: white;
