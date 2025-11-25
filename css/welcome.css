@@ -116,9 +116,7 @@ body {
 
 /*Section Styles*/
 section {
-	background: url(../img/blog.jpg) no-repeat center; /*Set the background image*/
-	background-size: cover;  /*Scale the background image to cover the entire section*/
-	height: 100vh; 
+	height: 100vh;
 	position: absolute;
 	top: 0;
 	left: 0;
