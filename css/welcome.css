@@ -3,8 +3,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #f4e9ff; 
   }
-  
+
   /* Navigation Bar Styles */
   nav {
     background-color: #0099cc;  /* Sets the background color of the navigation bar*/
@@ -16,26 +17,26 @@ body {
     position: relative;
     z-index: 10;
   }
-  
+
   /* Logo Styles */
   .logo {
     font-size: 35px;  /* Logo font size */
-    font-weight: bold;  
+    font-weight: bold;
   }
-  
+
   /* Menu Styles */
   ul {
     display: flex;
-    list-style: none; /*Removes the bullet points from the list */ 
-    padding: 0;      
-    margin: 0;        
+    list-style: none; /*Removes the bullet points from the list */
+    padding: 0;
+    margin: 0;
   }
-  
-  /* Menu Items Styles*/ 
+
+  /* Menu Items Styles*/
   ul li {
     margin-right: 20px;
   }
-  
+
   /* Menu Item Links Styles*/
   ul li a {
     color: white;
@@ -43,12 +44,12 @@ body {
     text-decoration: none;
     transition: color 0.3s;
   }
-  
+
   /* Hover styles for menu item links */
   ul li a:hover {
     color:  #1affff;
     }
-  
+
   /* Hamburger menu styles */
   .checkbtn {
     font-size: 30px;
@@ -69,11 +70,11 @@ body {
   .checkbtn:active {
     transform: scale(0.95); /* Scales the hamburger menu icon when clicked */
   }
-  
+
   #check {
     display: none;
   }
-  
+
   /* Responsive Styles */
   @media (max-width: 768px) {
     .checkbtn {
@@ -81,7 +82,7 @@ body {
       order: 1;
       margin-right: 20px;
     }
-  
+
     /* Menu styles for small screens */
     ul {
       position: absolute;
@@ -97,38 +98,147 @@ body {
       padding-top: 30px;
       transition: all 0.3s;
     }
-  
+
+    .comparison-table {
+      width: 100%;
+    }
+    .comparison-table th, .comparison-table td {
+      padding: 8px; /*Reduce padding in small screens */
+    }
+
 	/*Menu items styles for small screens*/
   nav ul li {
       margin: 20px 0;
     }
-  
+
     /* Menu item links styles for small screens */
     ul li a {
       font-size: 20px;
     }
-  
+
     /* Show the menu when the checkbox is ckecked*/
     #check:checked ~ ul {
       right: 0;
     }
   }
 
-/*Section Styles*/
+/* Section Styles {Image} */
 section {
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1;
+padding-top: 80px; /* Offset for fixed nav */
+height: calc(100vh - 80px); /* Full viewport height minus nav height */
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+position: relative;
+overflow: hidden; /* Ensure background doesn't overflow */
 }
 
-/*Heading Styles*/
-h1 {
-	text-align: center;
-	color: white;
-	font-size: 50px;
-	position: relative;
-	z-index: 1;
+/*Section Text Styles (Title Of Image)*/
+section h1 {
+font-size: 60px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.699);
+margin: 0;
+}
+
+
+/* About Us Card Styles */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 36px;
+}
+
+/* Paragraph Styles: About Us paragraph */
+p {
+  text-align: center;
+  margin-bottom: 20px; /* Space between paragraphs */
+  line-height: 1.5; /* Line spacing */
+  max-width: 600px; /* Max width of the paragraph */
+  margin-left: auto; /* Center the paragraph */
+  margin-right: auto; /* Center the paragraph */
+}
+
+/* Card Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow cars to wrap on small screens */
+  justify-content: center; /* Center cards horizontally */
+  margin-top: 40px;
+}
+
+/* Column Layout */
+.column {
+  flex: 1; /* Aloow clumn to take equal space */
+  max-width: 500px; /* Max width for each column */
+  padding: 0 10px; /* Space between columns */
+}
+
+/* Card Styles */
+.card {
+  background-color: #fcfbfb;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+/* Card Title Styles */
+.card h3 {
+  color: #1abc9c;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Card Paragraph Styles */
+.card p {
+  margin: 5px;
+  font-size: 16px;
+  text-align: center;
+  max-width: none;  /* Remove max width */
+  padding: 0;       /* Remove padding for paragraphs */
+}
+
+/* Table Styles */
+.comparison-table {
+  width: 80%; /* Table width */
+  margin: 20px auto; /* Center the table */
+  border-collapse: collapse;  /* Collapse borders between cells */
+  background-color: #fcfbfb;
+  border-radius: 8px; /* Rounded corners for the table */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Header and Data Styles */
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #4d4242;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table Header Styles */
+.comparison-table th {
+  background-color: #3e8ebf;
+  color: rgb(244, 237, 237);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+    background: #ddd;
+    text-align: center;
+    padding: 25px;
+    margin-top: 19px;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin: 0;
 }
